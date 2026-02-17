@@ -1,0 +1,18 @@
+To run this you should go to https://nodejs.org/en and install node.js 22.0 or later.
+One node is installed do the following:
+1. delete the bot.js file and the entire crypto folder. This is so the bot doesn't have a conflict and dies.
+2. open a command prompt in the same folder as the code
+3. type in node start.js
+4. copy the access token. It should look something like this: access_token: 'mct_YKjS2szLJvBhBt2QSZCUlkAGpEfaPl_4dWpj3'
+5. open up index.js
+6. paste the token on line 14 between the 2 quotation marks. The result should look something like const accessToken = "mct_YKjS2szLJvBhBt2QSZCUlkAGpEfaPl_4dWpj3";
+7. type in node index.js
+
+After following the 7 steps the bot should be running and automatically accept any room requests
+the commands are:
+!member add *member name* *member prefix*  - add a alter to the bot
+!member remove *member namme*              - remove an alter from the bot
+!member list                               - see a list of all the alters the bot is keeping track of
+*member prefix* message you want to send   - speak as one of the alters that the bot is keeping track of
+
+This version is very bad and the alters don't have an owner so anyone can use any alter. I will maybe come back to this, but it's a pain in the ass right now and i'm writing this at 1 AM. Have fun!
