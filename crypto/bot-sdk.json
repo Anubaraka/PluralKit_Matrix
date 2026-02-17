@@ -1,0 +1,13 @@
+{
+  "rooms": {
+    "6fe2a2edc0bc9908b7ec0b59ac6b2ad6737530c216d4a84f1e95c1d75fdf4a8a2bc7b3962538e9db90519ee46a06716947b0c587dbda4d6547367c31158e8771": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "shared"
+    },
+    "a0d7ed77b65318f8dd6a9c663c78f05d2146bafab5583d5152ced4b820d4d5b81cfd5eeb58c9e9babb2f56229e7ed73bcbf31239c4d286a2fdd5613dbb32c781": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "shared"
+    }
+  },
+  "deviceId": "Y3a3MjLUNg"
+}
