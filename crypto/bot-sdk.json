@@ -1,13 +1,29 @@
 {
   "rooms": {
-    "6fe2a2edc0bc9908b7ec0b59ac6b2ad6737530c216d4a84f1e95c1d75fdf4a8a2bc7b3962538e9db90519ee46a06716947b0c587dbda4d6547367c31158e8771": {
+    "a0d7ed77b65318f8dd6a9c663c78f05d2146bafab5583d5152ced4b820d4d5b81cfd5eeb58c9e9babb2f56229e7ed73bcbf31239c4d286a2fdd5613dbb32c781": {
       "algorithm": "m.megolm.v1.aes-sha2",
       "historyVisibility": "shared"
     },
-    "a0d7ed77b65318f8dd6a9c663c78f05d2146bafab5583d5152ced4b820d4d5b81cfd5eeb58c9e9babb2f56229e7ed73bcbf31239c4d286a2fdd5613dbb32c781": {
+    "81d23e836381516afa6f5d2202665f3e11572b5288dbad4355c95a752868b98fd1a097f4d50282851807d3dee8234bb00e92fed17a294d9434db852a7b9f40c2": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "invited"
+    },
+    "7304bc91833f49cf96aca159cc3b2e8c355cfea19ce2ed22ff1ec2a02fcdbbeb3b2ee3c1eb9d10f453f067e3031b12d1b98c50d429c12c4753b77eeeb0c4a2cf": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "shared"
+    },
+    "3e028e5ca86e6a142f55fd3fb23e08961e44e1b43dfbe34c106505c552be535f42fab2f72e46aebe8838c519f75a04be15c29f40843b992a4c406a856f8f825d": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "shared"
+    },
+    "341f5715a011ef1a18586b5f0e4816490f1f8b65fd05b0d7a1d90a7fc92fe008db560cdde5049a9eb3991acd0e483520d1dbcf5aea1057a974947016c90f199f": {
+      "algorithm": "m.megolm.v1.aes-sha2",
+      "historyVisibility": "invited"
+    },
+    "6fe2a2edc0bc9908b7ec0b59ac6b2ad6737530c216d4a84f1e95c1d75fdf4a8a2bc7b3962538e9db90519ee46a06716947b0c587dbda4d6547367c31158e8771": {
       "algorithm": "m.megolm.v1.aes-sha2",
       "historyVisibility": "shared"
     }
   },
-  "deviceId": "Y3a3MjLUNg"
+  "deviceId": "cIMV8RTUfN"
 }

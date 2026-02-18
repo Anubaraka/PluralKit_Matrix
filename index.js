@@ -11,7 +11,7 @@ import {
 } from "fs";
 
 const homeserverUrl = "https://matrix-client.matrix.org";
-const accessToken = "mct_YKjS2szLJvBhBt2QSZCUlkAGpEfaPl_4dWpj3";
+const { access_token: accessToken } = JSON.parse(readFileSync("stuff.txt", "utf8"));
 const storage = new SimpleFsStorageProvider("bot.json");
 const crypto = new RustSdkCryptoStorageProvider("./crypto");
 const MEMBERS_FILE = "members.json";
@@ -108,7 +108,15 @@ client.on("room.message", async (roomId, event) => {
     for (const member of members) {
         if (body.startsWith(member.prefix)) {
             const text = body.substring(member.prefix.length).trim();
+            try{
             await client.redactEvent(roomId, event["event_id"]);
+            }
+            catch (e) {
+                await client.sendMessage(roomId, {
+                    "msgtype": "m.text",
+                    "body": `Error! The bot needs to be able to delete messages. Please allow the bot to delete messages to make this message dissapear`,
+                });
+            }
             await client.sendMessage(roomId, {
                 "msgtype": "m.text",
                 "body": `[${member.name}]: ${text}`,
