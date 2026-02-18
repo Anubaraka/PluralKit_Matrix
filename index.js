@@ -34,10 +34,15 @@ AutojoinRoomsMixin.setupOnClient(client);
 
 client.on("room.message", async (roomId, event) => {
     if (!event["content"]) return;
+
+    const age = Date.now() - event["origin_server_ts"];
+    if (age > 30000) return;
+
     const sender = event["sender"];
     if (sender === await client.getUserId()) return;
 
     const body = event["content"]["body"];
+    if (!body) return;
 
     // !member add <name> <prefix>
     // example: !member add Alice A:
@@ -109,7 +114,7 @@ client.on("room.message", async (roomId, event) => {
         if (body.startsWith(member.prefix)) {
             const text = body.substring(member.prefix.length).trim();
             try{
-            await client.redactEvent(roomId, event["event_id"]);
+                await client.redactEvent(roomId, event["event_id"]);
             }
             catch (e) {
                 await client.sendMessage(roomId, {

@@ -1,5 +1,5 @@
 {
-  "access_token": "*",
-  "device_id": "cIMV8RTUfN",
+  "access_token": "mct_4W0zzKEezT3H953OUalEPcViGYBspo_08zfvu",
+  "device_id": "TgKWBk8x55",
   "user_id": "@pluralkitbot2:matrix.org"
 }
