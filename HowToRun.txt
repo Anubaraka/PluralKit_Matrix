@@ -1,0 +1,9 @@
+To run this you should go to https://nodejs.org/en and install node.js 22.0 or later.
+One node is installed do the following:
+1. run the start.bat. I configured it to automatically do all the tasks needed to run this. It will 
+
+the commands are:
+!member add *member name* *member prefix*  - add a alter to the bot
+!member remove *member namme*              - remove an alter from the bot
+!member list                               - see a list of all the alters the bot is keeping track of
+*member prefix* message you want to send   - speak as one of the alters that the bot is keeping track of
